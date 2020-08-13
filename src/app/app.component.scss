@@ -1,10 +1,11 @@
 .app {
-  background-color: #1E202B;
-
-  .header {
-
-  }
+  height: 100%;
 
   .main-page {
+    height: 100%;
+    padding: 1rem;
+    background-color: #ECEEF2;
+    font-family: "Roboto", serif;
+    font-weight: 400;
   }
 }
