@@ -6,4 +6,16 @@
 }
 
 .weather-card {
+
+  .current-weather-row {
+    height: 100px;
+
+    .current-weather-row__temp {
+      font-size: large;
+    }
+
+    .padding-left-2rem {
+      padding-left: 2rem;
+    }
+  }
 }

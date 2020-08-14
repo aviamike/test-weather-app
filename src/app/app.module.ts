@@ -14,6 +14,7 @@ import {MatInputModule} from '@angular/material/input';
 import {LocationService} from './location.service';
 import {WeatherService} from './weather.service';
 import {HttpClientModule} from '@angular/common/http';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {HttpClientModule} from '@angular/common/http';
     MatCardModule,
     MatButtonModule,
     HttpClientModule,
+    MatSnackBarModule,
   ],
   providers: [
     LocationService,

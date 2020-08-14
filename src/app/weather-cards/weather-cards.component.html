@@ -5,18 +5,42 @@
         <span>Вы можете разрешить браузеру определить ваше местоположение<br>Или ввести ваше местоположение самостоятельно
         </span>
       </h3>
-      <mat-card-subtitle>Или прогноз погоды - ваш!</mat-card-subtitle>
+      <mat-card-subtitle>И прогноз погоды - ваш!</mat-card-subtitle>
 
     </mat-card-content>
 
   </mat-card>
   <mat-card *ngIf="coords" class="weather-card mat-card mat-elevation-z2">
     <mat-card-content>
-      <div>Погода в </div>
-      <div>Сейчас</div>
+      <div>Погода сейчас в {{locationName}}</div>
+      <div *ngIf="displayCard" fxLayout="row" fxLayoutAlign="start center" class="current-weather-row"
+           fxLayoutGap="1rem">
+        <div class="current-weather-row__temp">
+          {{displayCard.curr.temp}}°C
+        </div>
+        <img [src]="getIconUrl(displayCard.curr.icon)" alt="Icon"/>
+        <div>
+          {{displayCard.curr.description}}
+        </div>
+      </div>
+
+      <div *ngIf="displayCard" fxLayout="column" fxLayoutAlign="start start" class="weather-forecast" fxLayoutGap="1rem">
+        <div>
+          <b>Прогноз по дождю:</b>
+        </div>
+        <div>
+          {{displayCard.rainForecast.conclusion}}
+        </div>
+        <div>
+          <b>Рекомендация по температуре:</b>
+        </div>
+        <div>
+          {{displayCard.tempSuggestions}}
+        </div>
+      </div>
+
 
     </mat-card-content>
-
   </mat-card>
 
   <mat-card class="mat-card mat-elevation-z2">
