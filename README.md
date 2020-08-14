@@ -2,10 +2,17 @@
 
 Данное приложение позволяет узнать текущую погоду в вашем местоположении или в любом другом городе мира. Также он выдаёт рекомендации относительно осадков и температуры (учитывая почасовой прогноз на ближайшие 10 часов)
 
+## Install
 
-## Built With
+```sh
+$ npm install
+```
 
-* [Angular](http://angular.io/) - Использованный фреймворк
+## Usage
+
+```sh
+$ npm run start
+```
 
 ## Development server
 
@@ -18,3 +25,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Built With
+
+* [Angular](http://angular.io/) - Использованный фреймворк
